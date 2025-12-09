@@ -1,0 +1,148 @@
+---
+title: Welcome to NuaLogic
+description: An overview of NuaLogic, a Dublin-based technology consultancy empowering Irish SMEs with AI strategies, process automation, and fractional CIO services to drive business growth and innovation.
+---
+
+## Overview
+
+NuaLogic empowers Irish SMEs to unlock growth through cutting-edge AI strategies, seamless process automation, and expert fractional CIO guidance. Based in Dublin, you gain a trusted partner that combines local expertise with global technology trends. Drive innovation without the overhead of a full-time tech team.
+
+<Columns cols={3}>
+  <Card title="AI Strategies" icon="zap" href="/docs/ai-strategies">
+    Harness machine learning and generative AI to optimize decisions and customer experiences.
+  </Card>
+  <Card title="Process Automation" icon="settings" href="/docs/automation">
+    Streamline operations with RPA and workflow tools, reducing costs by up to 40%.
+  </Card>
+  <Card title="Fractional CIO" icon="users" href="/docs/cio-services">
+    Access strategic IT leadership on-demand to align technology with your business goals.
+  </Card>
+</Columns>
+
+## Our Mission and Values
+
+You focus on your core business while NuaLogic delivers tailored technology solutions. Our mission centers on sustainable innovation for Irish SMEs, emphasizing integrity, agility, and measurable results.
+
+<Callout kind="info">
+  We prioritize ethical AI practices and data security, ensuring compliance with GDPR and Irish regulations.
+</Callout>
+
+<Expandable title="Core Values" default-open="true">
+  - **Innovation**: Stay ahead with emerging tech like LLMs and edge computing.
+  - **Partnership**: Work collaboratively as your extended team.
+  - **Impact**: Deliver ROI-focused solutions that scale with your growth.
+</Expandable>
+
+## Who We Serve: Irish SMEs
+
+NuaLogic targets small and medium enterprises across Ireland, from manufacturing in Cork to fintech in Dublin. You benefit from our deep understanding of local challenges like talent shortages and regulatory hurdles.
+
+| Industry          | Key Challenges We Solve                  | Example Impact                  |
+|-------------------|------------------------------------------|---------------------------------|
+| Manufacturing     | Supply chain inefficiencies              | 30% faster order fulfillment    |
+| Retail            | Personalized customer engagement         | 25% increase in repeat sales    |
+| Professional Services | Document processing delays             | Automated workflows save 20h/week |
+| Fintech           | Compliance and fraud detection           | Real-time AI monitoring         |
+
+## Core Services in Action
+
+Explore how our services integrate into your operations.
+
+<Tabs>
+  <Tab title="AI Strategies" icon="brain">
+    Implement predictive analytics for demand forecasting.
+
+    <CodeGroup tabs="Python,JavaScript">
+      ```python
+      import pandas as pd
+      from sklearn.model_selection import train_test_split
+      from sklearn.ensemble import RandomForestRegressor
+
+      # Load Irish sales data
+      data = pd.read_csv('sales_ireland.csv')
+      X = data[['price', 'season', 'region']]
+      y = data['demand']
+
+      X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+      model = RandomForestRegressor(n_estimators=100)
+      model.fit(X_train, y_train)
+      predictions = model.predict(X_test)
+      print(f"Accuracy: {model.score(X_test, y_test):.2f}")
+      ```
+      ```javascript
+      const ml5 = require('ml5');
+      const data = require('./sales_ireland.json');
+
+      const options = {
+        task: 'regression',
+        debug: true
+      };
+
+      const knn = ml5.KNNClassifier(options);
+      // Train on sales data
+      knn.addExample(data.features, data.demand);
+      knn.train();
+
+      const prediction = knn.classify(data.testFeatures);
+      console.log('Demand forecast:', prediction);
+      ```
+    </CodeGroup>
+  </Tab>
+  <Tab title="Process Automation" icon="play">
+    Automate invoice processing with RPA.
+
+    ```mermaid
+    sequenceDiagram
+        participant SME as Irish SME
+        participant Nua as NuaLogic RPA
+        participant DB as Database
+
+        SME->>Nua: Upload invoice PDF
+        Nua->>DB: Extract data via OCR
+        DB->>Nua: Validate amounts
+        Nua->>SME: Approve & archive
+    ```
+  </Tab>
+  <Tab title="Fractional CIO" icon="activity">
+    Quarterly strategy reviews ensure alignment.
+
+    <Steps>
+      <Step title="Discovery" icon="search">
+        Assess your current IT stack and business goals.
+      </Step>
+      <Step title="Roadmap" icon="map">
+        Create a 12-month technology roadmap.
+      </Step>
+      <Step title="Implementation" icon="check-circle">
+        Oversee execution with milestone tracking.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## Get Started with NuaLogic
+
+Begin your transformation today.
+
+<Steps>
+  <Step title="Book a Consultation" icon="calendar">
+    Schedule a free 30-minute discovery call via our [contact form](https://nualogic.ie/contact).
+  </Step>
+  <Step title="Needs Assessment" icon="clipboard-list">
+    Share your challenges; we analyze fit in 48 hours.
+  </Step>
+  <Step title="Custom Proposal" icon="file-text">
+    Receive a tailored plan with ROI projections.
+  </Step>
+  <Step title="Launch Project" icon="rocket">
+    Kick off with agile sprints and weekly check-ins.
+  </Step>
+</Steps>
+
+<Callout kind="success">
+  Over 50 Irish SMEs have accelerated growth with NuaLogic. Join them.
+</Callout>
+
+## Our Brand Story
+
+Founded in 2022 by Dublin tech veterans, NuaLogic bridges the AI adoption gap for SMEs. Contact us at hello@nualogic.ie or visit our [Dublin office](https://nualogic.ie/location). Let's innovate together.

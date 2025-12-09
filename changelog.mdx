@@ -1,0 +1,147 @@
+---
+title: Changelog
+description: Updates to NuaLogic's services, methodologies, and resources, highlighting recent enhancements in AI strategies and automation tools.
+---
+
+## Recent Updates
+
+Stay informed about the latest improvements to NuaLogic's AI strategies, process automation tools, and fractional CIO services. You can now leverage enhanced integrations and streamlined workflows designed specifically for Irish SMEs.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Integrated LangChain support for advanced AI chaining workflows
+- Added prompt engineering playground for testing custom AI prompts
+- Introduced real-time automation dashboards with NuaLogic metrics
+
+## Improvements
+
+- Enhanced fractional CIO reporting with exportable PDF summaries
+- Optimized API response times by `>30%` for automation scripts
+- Updated documentation with interactive code examples
+
+## Bug Fixes
+
+- Resolved intermittent failures in process automation triggers
+- Fixed dashboard refresh issues in legacy browsers
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Expanded fractional CIO toolkit with customizable KPI trackers
+- Added Zapier integration for no-code automation pipelines
+- Introduced AI strategy assessment templates for SMEs
+
+## Improvements
+
+- Streamlined onboarding process with guided setup wizards
+- Improved mobile responsiveness for all dashboards
+
+## Bug Fixes
+
+- Corrected data sync errors between AI tools and CRM systems
+- Patched authentication vulnerabilities in API endpoints
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## Initial Release
+
+- Launched core AI strategy consulting services
+- Introduced process automation engine with Python SDK
+- Provided fractional CIO access with dedicated dashboards
+
+## Breaking Changes
+
+- Migrated to new authentication flow using `{NUALOGIC_API_KEY}`
+
+</Update>
+
+## Upcoming Roadmap
+
+Discover what's next for NuaLogic. These teasers highlight planned enhancements to drive your business growth.
+
+<Columns cols={3}>
+  <Card title="Q4 2024: Multi-Agent AI" icon="zap" href="/docs/multi-agent">
+    Deploy collaborative AI agents for complex automation tasks.
+  </Card>
+  <Card title="Q1 2025: Enterprise Scaling" icon="trending-up" href="/docs/enterprise">
+    Scale AI strategies across your entire organization.
+  </Card>
+  <Card title="Q2 2025: Advanced Analytics" icon="bar-chart" href="/docs/analytics">
+    Unlock predictive insights with integrated ML models.
+  </Card>
+</Columns>
+
+<Callout kind="info">
+  Subscribe to our newsletter or join the NuaLogic Slack community to receive early access and beta invites for upcoming features.
+</Callout>
+
+## Integrate New Features
+
+Follow these steps to adopt the latest AI integration capabilities from v1.2.0.
+
+<Steps>
+  <Step title="Set Up API Key" icon="key">
+    Generate your `{NUALOGIC_API_KEY}` from the dashboard.
+  </Step>
+  <Step title="Install SDK" icon="download">
+    Use the following multi-language examples to get started.
+  </Step>
+  <Step title="Run First Automation" icon="play">
+    Test with a sample AI prompt chain.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="Python,JavaScript">
+  ```python
+  import requests
+  from langchain.llms import NuaLogicLLM
+
+  api_key = "{NUALOGIC_API_KEY}"
+  llm = NuaLogicLLM(api_key=api_key)
+  response = llm("Optimize my SME supply chain")
+  print(response)
+  ```
+  ```javascript
+  const { NuaLogicLLM } = require('nualogic-sdk');
+
+  const llm = new NuaLogicLLM({ apiKey: '{NUALOGIC_API_KEY}' });
+  const response = await llm.generate("Optimize my SME supply chain");
+  console.log(response);
+  ```
+</CodeGroup>
+
+## Platform-Specific Notes
+
+<ExpandableGroup>
+  <Expandable title="Migration Guide for v1.2.0" default-open="true">
+
+    Review these changes if upgrading from v1.1.0.
+
+    | Change | Impact | Action |
+    |--------|--------|--------|
+    | New auth header | `Authorization: Bearer {token}` | Update scripts |
+    | Deprecated endpoints | `/v1/ai` → `/v2/ai` | Migrate calls |
+    | SDK version bump | `^1.1.0` → `^1.2.0` | Reinstall package |
+
+  </Expandable>
+  <Expandable title="Advanced Configuration">
+
+    Customize your AI workflows with these options.
+
+    ```json
+    {
+      "model": "gpt-4o-mini",
+      "maxTokens": 1000,
+      "temperature": 0.7
+    }
+    ```
+
+  </Expandable>
+</ExpandableGroup>
